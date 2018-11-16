@@ -1,0 +1,812 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+body{
+	overflow-x: hidden;
+}
+/*头部*/
+.head{
+	width:100%;
+	height: 60px;
+	background: #313131;
+	position: fixed;
+	top:0 ;
+	z-index: 1000;
+}
+.head-con{
+	width: 1240px;
+	height: auto;
+	padding: 0 20px;
+	margin: auto;
+	overflow: hidden;
+}
+.head-logo{
+	width: 40px;
+	height: 40px;
+	margin-right: 156px;
+	margin-top: 10px;
+	float: left;
+}
+.head-nav{
+	width: 711.667px;
+	height: 16px;
+	float: left;
+
+	margin-top: 22px;
+	margin-right: 64px;
+}
+.head-navul{
+	width: 711.667px;
+	height: 16px;
+	
+}
+.head-navul li{
+	list-style: none;
+	float: left;
+	width: 112px;
+	height: 16px;
+	text-align: center;
+	line-height: 16px;
+	
+}
+.head-navul li a:link,a:visited{
+	color: white;
+	display: block;
+	text-decoration: none;
+}
+.head-line{
+	width: 25px;
+	height: 4px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:8px ;
+	background: white;
+	border-radius: 8px;
+	display: none;
+}
+.head-navul li:hover .head-line{
+	display: block;
+}
+.gold-a{
+	display: block;
+	width:112px ;
+	height: 32px;
+	margin-left: 86px;
+	float: left;
+}
+.head-gold{
+	display: block;
+	width:112px ;
+	height:32px ;	
+	margin-top: 14px;
+}
+/*下拉*/
+.w-innner {
+	width: 1240px;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+
+
+@keyframes zoomInLeft {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+		transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+		-webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+		animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+		transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+		-webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+		animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+
+header .productList {
+	width: 100%;
+	height: 240px;
+	min-width: 1240px;
+	max-width: 2560px;
+	display: none;
+	z-index: 1002;
+	margin: 0 auto;
+	position: fixed;
+	top: 60px;
+	background: #fff;
+	-webkit-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+	padding: 20px 0px;
+}
+
+header .productList .left {
+	display: inline-block;
+	position: relative;
+	background-color: #fff;
+	margin-right: 20px;
+	width: 400px;
+	height: 300px;
+}
+
+header .productList .left img.newproimg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+	width: 400px;
+	height: 300px;
+}
+
+header .productList .left .icon-new {
+	position: absolute;
+	bottom: 90px;
+	left: 20px;
+	z-index: 1001;
+	width: 64px;
+	height: 32px;
+}
+
+header .productList .left h2 {
+	font-size: 24px;
+	color: #313131;
+	z-index: 1001;
+	position: absolute;
+	bottom: 47px;
+	left: 20px;
+	font-weight: normal;
+}
+
+header .productList .left h4 {
+	font-size: 16px;
+	color: #959595;
+	z-index: 1001;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	font-weight: normal;
+}
+
+header .productList .right {
+	vertical-align: top;
+	width: 100%;
+	height: 100%;
+}
+
+header .productList .right a {
+	display: none;
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+header .productList .right .zoomInLeft {
+	display: block;
+	opacity: 0;
+	-webkit-animation-name: zoomInLeft;
+	animation-name: zoomInLeft;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+header .productList .right figure {
+	width: 200px;
+	height: 200px;
+	-webkit-transition: all 0.6s;
+	-o-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+header .productList .right figure:hover {
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .productList .right figure figcaption {
+	margin-top: 4px;
+	font-size: 14px;
+	color: #313131;
+	text-align: center;
+	font-weight: normal;
+}
+
+header .productList .right figure .proimg {
+	height: 160px;
+	text-align: center;
+	line-height: 160px;
+	position: relative;
+}
+
+header .productList .right figure .proimg img {
+	height: auto;
+	max-width: 100%;
+	max-height: 160px;
+	vertical-align: middle;
+}
+
+header .productList .right figure .proimg .icon-new {
+	position: absolute;
+	top: 10px;
+	left: 9px;
+	z-index: 1001;
+	width: 64px;
+	height: 32px;
+}
+/*下拉结束*/
+/*头部结束*/
+
+
+/*红色导航栏*/
+.rednav{
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	top:59px;
+	background: white;
+	opacity: 1;
+	color: black;
+	z-index: 999;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.rednav-con{
+	width: 1200px;
+	height: 59px;
+	margin: auto;
+	padding-left: 20px;
+	
+	line-height: 59px;
+	font-size: 16px;
+	position: relative;
+	left: calc(50% - 600px);
+	
+}
+.rednav-con a:link,a:visited{
+	color: black;
+	text-decoration: none;
+}
+/*红色导航栏结束*/
+/*葡萄教育*/
+.top-area{
+	width: 1349px;
+	margin-top: 120px;
+    position: relative;
+	height: 721.5px;
+	overflow: hidden;
+	
+}
+.top-area img{
+	height: 720px;
+	top: 50%;
+	position: relative;
+	top:50%;
+	left: 50%;
+	transform: translate(-50% ,-50%);
+}
+/*葡萄教育结束*/
+
+
+/*整个中心*/
+.page-container{
+	width: 100%;
+	height: 4135px;
+	background: white;
+	position: relative;
+	top: -122px;
+	overflow: hidden;
+}
+.title{
+	width: 480px;
+	height: 96px;
+	display: block;
+	margin: auto;
+	background: url(../img/教育/img_education_features_title.201811071838.png) no-repeat;
+	color: #313131;
+	font-weight: normal;
+	font-size: 40px;
+	text-align: center;
+	line-height: 96px;
+	background-size: 100% 100%;
+}
+.way-con{
+	width: 1240px;
+	height: 438px;
+	margin: auto;
+	padding: 0 20px;
+	
+}
+.way-left{
+	width: 609px;
+	height: 438px;
+	float: left;
+	position: relative;
+	margin-right: 115px;
+	position: relative;
+	background: url(../img/首页/img_education_solution_card.201811071838.jpg)no-repeat;
+	background-size: 100% 100%;
+	
+}
+/*轮播图*/
+#s1{
+	width: 500px;
+	height: 350px;
+	margin-top: 65px;
+	margin-left: 64px;
+	
+	
+	
+}
+.swiper-wrapper{
+	width: 2000px;
+	height: 350px;
+
+}
+.swiper-slide{
+	width: 500px;
+	height: 350px;
+	float: left;
+	display: block;
+}
+.swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+.way-left .swiper-button-prev{
+	
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	position: absolute;
+	left: 32px;
+	top: 208px;
+	z-index: 3;
+	background: url(../img/首页/btn_64_turn_l@2x.201811071838.png)no-repeat;
+	background-size: 100% 100%;
+}
+.way-left .swiper-button-next{
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	right: 17px;
+	top: 208px;
+	z-index: 3;
+	border-radius: 50%;
+	background: url(../img/首页/btn_64_turn_r@2x.201811071838.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*轮播图结束*/
+.way-right{
+	width: 399px;
+	height: 266px;
+	float: left;
+	
+	vertical-align: middle;
+    margin-top: 100px;
+    background: url(../img/首页/img_education_solution_color@2x.201811071838.jpg)no-repeat;
+    background-size: 100% 100%;
+}
+.way-h3{
+	margin-top: 138px;
+	padding-left: 49px;
+	font-size: 36px;
+	color: #313131;
+	font-weight: normal;
+	margin-bottom:20px;
+}
+.way-p{
+	padding-left: 38px;
+	width: 224px;
+	text-indent: 2em;
+	color: #646464;
+	text-align: center;
+	line-height: 1.2;
+	font-size: 16px;
+	
+	vertical-align: baseline;
+}
+
+/*特色方案*/
+.colorway{
+	width: 100%;
+	height:1430px;
+	border-radius: 24px;
+	padding-bottom: 40px;
+	background-color: rgb(255, 250, 230);
+	margin-top: 90px;
+	
+
+}
+
+
+.colorway-con{
+	width: 1240px;
+	height:1430px;
+	margin: auto;
+	
+	position: relative;
+	
+	
+}
+.color-bg{
+	background: url(../img/首页/img_education_solution_title@2x.201811071838.png)no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: -48px;
+	left: 50%;
+	z-index: 3;
+	transform: translateX(-50%);
+	overflow: hidden;
+}
+.slide{
+	width: 1200px;
+	height: 358px;
+	margin-right: auto;
+	margin-left: auto;
+	
+	
+	
+}
+.slide1{
+	width: 358px;
+	height: 358px;
+	display: block;
+	float: left;
+	margin-right: 200px;
+	margin-top: 150px;
+}
+.bg1{
+	width:520px;
+	height: 178px;
+	float: left;
+	background:url(../img/首页/img_education_features_color_01.201811071838.jpg)no-repeat ;
+	margin-top: 200px;
+	background-size: 236px 172px;
+	
+	
+}
+.bg1 h4{
+	font-size: 24px;
+	color: #313131;
+	font-weight: normal;
+	
+	margin-bottom: 21px;
+}
+.bg1 p{
+	font-size: 16px;
+	color: #646464;
+	line-height: 1.3;
+}
+.slide2{
+	display: block;
+	width: 1078px;
+	height: 230px;
+	position: relative;
+	top: 20px;
+	left: 61px;
+	
+}
+.hr{
+	position: relative;
+	top: 40px;
+	height: 10px;
+	border-radius: 5px;
+	width: 1240px;
+	margin: auto;
+}
+.hr1{
+	background: #FFF4A5;
+}
+.slid3{
+	margin-top: 63px;
+	
+}
+.bgb2{
+	
+	margin-top: 150px;
+	width: 520px;
+	height: 203px;
+	background: url(../img/首页/img_education_features_color_02.201811071838.jpg) no-repeat;
+	background-size: 265px 203px;
+	background-position:117px 0px;
+}
+.bgb1{
+	width: 190px;
+	height: 85px;
+	margin-bottom: 30px;
+	
+}
+.listul{
+	width: 945px;
+	height: 229.5px;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+
+	list-style: none;
+	
+
+}
+.listul li{
+	width: 240px;
+	height:229.5px;
+	float: left;
+	margin-right: 106px;
+	
+	
+}
+.listul li:nth-child(3){
+	margin-right: 0px;
+}
+.listul img{
+	width: 96px;
+	height: 96px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	
+}
+.listul h5{
+	font-size: 20px;
+	color: #313131;
+	font-weight: normal;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.listul p{
+	font-size: 14px;
+	color: #959595;
+	line-height: 1.5;
+	text-align: center;
+}
+/*特色方案结束*/
+
+/*教学设备*/
+.element{
+	width: 100%;
+	height: 1335px;
+	position: relative;
+	margin-top: 80px;
+	background: #E6F9FF;
+	border-radius: 24px;
+
+}
+.element-con{
+	width: 1240px;
+	height: 1335px;
+	margin: auto;
+	
+}
+.element-bg{
+	background: url(../img/首页/img_education_equipment_title@2x.201811071838.png)no-repeat;
+	position: absolute;
+	background-size: 100% 100%;
+	top: -48px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.bgb3{
+	background:url(../img/首页/img_education_equipment_color_01.201811071838.jpg) no-repeat;
+	background-size: 240px 172px;
+	background-position: 70px 0px;
+}
+.hr2{
+	background: #CDF3FF;
+	position: relative;
+	top:-10px;
+}
+/*教学设备结束*/
+
+/*案例成果*/
+.friute-con{
+	margin-top: 80px;
+}
+.hide{
+	width: 102%;
+	height: 100%;
+}
+.hide p{
+	text-indent: 0em;
+	width: 100%;
+    padding-left: 0;
+}
+.way-h4{
+	margin-top: 138px;
+	padding-left: 49px;
+	font-size: 36px;
+	color: #313131;
+	font-weight: normal;
+	margin-bottom:20px;
+}
+.way2-p{
+	
+	width: 102%;
+	height: 100%;
+	color: #646464;
+	text-align: center;
+	line-height: 1.2;
+	font-size: 16px;
+	
+	vertical-align: baseline;
+}
+
+/*案例成果结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*整个中心结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

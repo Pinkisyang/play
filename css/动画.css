@@ -1,0 +1,510 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+/*头部*/
+.head{
+	width: 100%;
+	height: 100px;
+	
+}
+.header-logo{
+	width: 124px;
+	height: 100px;
+	float: left;
+	margin-left: 40px;
+}
+.header-logo img{
+	width: 124px;
+	height:50px;
+	display: block;
+	margin-top: 25px;
+}
+.header-nav{
+	width: 596px;
+	height: 100px;
+	list-style: none;
+	float: right;
+	margin-right: 40px;
+	
+}
+.header-nav li{
+	float: left;
+	margin-left: 40px;
+	line-height: 100px;
+}
+.header-nav a:link,a:visited{
+	font-size: 18px;
+	color: #333;
+	text-decoration: none;
+}
+.header-nav a:hover{
+	color: #7c70a0;
+}
+
+
+
+/*头部结束*/
+/*音乐进度*/
+.audio-button{
+	position: fixed;
+	right: 28.5px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 0;
+	cursor: pointer;
+	transition: all .3s;
+    overflow: hidden;
+}
+.audio-button div:nth-child(1){
+	animation: ado1 2s infinite linear;
+}
+.audio-button div:nth-child(2){
+	animation: ado2 1.6s infinite linear;
+}
+.audio-button div:nth-child(3){
+	animation: ado3 2.2s infinite linear;
+}
+.audio-button div:nth-child(4){
+	animation: ado4 1.2s infinite linear;
+}
+.audio-button div:nth-child(5){
+	animation: ado5 2.4s infinite linear;
+}
+.bar{
+	margin-right: 2px;
+	display: inline-block;
+	width: 5px;
+	height: 30px;
+	background: #ff0049;
+	border-radius: 6px;
+	transform-origin: bottom;
+}
+@keyframes ado1{
+	0% {
+
+    -webkit-transform: translateY(18px);
+    transform: translateY(18px);
+
+}
+50% {
+
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
+
+}
+100% {
+
+    -webkit-transform: translateY(18px);
+    transform: translateY(18px);
+
+}
+}
+
+@keyframes ado2{
+	0% {
+
+    -webkit-transform: translateY(16px);
+    transform: translateY(16px);
+
+}
+50% {
+
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+
+}
+100% {
+
+    -webkit-transform: translateY(16px);
+    transform: translateY(16px);
+
+}
+}
+@keyframes ado3{
+	0% {
+
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+
+}
+50% {
+
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+
+}
+100% {
+
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+
+}
+}
+@keyframes ado4{
+	0% {
+
+    -webkit-transform: translateY(18px);
+    transform: translateY(18px);
+
+}
+50% {
+
+    -webkit-transform: translateY(13px);
+    transform: translateY(13px);
+
+}
+100% {
+
+    -webkit-transform: translateY(18px);
+    transform: translateY(18px);
+
+}
+}
+@keyframes ado5{
+	0% {
+
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+
+}
+50% {
+
+    -webkit-transform: translateY(27px);
+    transform: translateY(27px);
+
+}
+100% {
+
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+
+}
+}
+/*音乐进度结束*/
+
+/*中心*/
+.container{
+	width: 100%;
+	height: 8843.82px;
+	
+}
+/*1*/
+.one{
+	width: 100%;
+	height: 762.317px;
+	position: relative;
+}
+.one-pic{
+	width: 100%;
+	height: 100%;
+	
+}
+.bg-video{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.one-bottom{
+	width: 100%;
+	height: 181px;
+	background: url(../img/动画/border-bottom.png) no-repeat;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	z-index: 9;
+	background-size: cover;
+	
+}
+/*1结束*/
+
+/*2*/
+.two{
+	width: 100%;
+	height: 2600px;
+	background: url(../img/动画/persons-bg.png) no-repeat;
+	background-size: 100% 100%;
+	margin-top: -1px;
+	position: relative;
+	padding-top: 65px;
+	
+	
+}
+/*bobo*/
+.bobo{
+	width: 1200px;
+	height: 905px;
+	position: relative;
+	margin: 0 auto;
+	
+}
+.bobo-left{
+	width: 590px;
+	height: 353px;
+	left: 0;
+	top: 175px;
+	
+	position: absolute;
+}
+.person{
+	width: 600px;
+	height: 968.333px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	
+}
+.person img{
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+}
+.person img:hover{
+	transform: scale(1.1);
+	
+}
+.bobo-pic1{
+	width: 564px;
+	height: 88px;
+	display: block;
+	margin-bottom: 55px;
+}
+.bobo-pic2{
+	width: 291px;
+	height: 41px;
+	margin-bottom: 17px;
+	display: block;
+}
+.bobo-pic3{
+	width: 567px;
+	height: 20px;
+	margin-bottom: 15px;
+}
+.bobo-pic4{
+	width: 471px;
+	height: 20px;
+	display: block;
+	margin-bottom: 15px;
+}
+.bobo-pic5{
+	width: 215px;
+	height: 67px;
+	display: block;
+	margin-top: 30px;
+}
+
+/*bobo结束*/
+
+/*lulu*/
+.lulu{
+	width: 1200px;
+	height: 746px;
+	margin: 0 auto;
+	position: relative;
+}
+.lulu-person{
+	width: 600px;
+	height: 799.5px;
+	position: absolute;
+}
+.lulu-person img{
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+}
+.lulu-person img:hover{
+	transform: scale(1.1);
+	
+}
+.lulu-right{
+	width: 590px;
+	height: 355px;
+	position: absolute;
+	right: 0;
+	top: 175px;
+}
+.lulu-pic1{
+	width: 557px;
+	height: 92px;
+	margin-bottom: 55px;
+	display: block;
+}
+.lulu-pic2{
+	width: 461px;
+	height: 40px;
+	margin-bottom: 17px;
+	display: block;
+}
+.lulu-pic3{
+	width: 567px;
+	height: 20px;
+	margin-bottom: 15px;
+	display: block;
+}
+.lulu-pic4{
+	width: 249px;
+	height: 20px;
+	margin-bottom: 15px;
+	display: block;
+}
+.lulu-pic5{
+	width: 208px;
+	height:66px;
+	margin-bottom:30px;
+	display: block;
+}
+/*lulu结束*/
+
+/*coco*/
+.coco{
+	width: 1200px;
+	height: 746px;
+	position: relative;
+	margin: 0 auto;
+}
+.coco-left{
+	width: 590px;
+	height: 351px;
+	position: absolute;
+	left: 0;
+	top: 190px;
+}
+.coco-right{
+	position: absolute;
+	top: 60px;
+	right: 0;
+	width: 600px;
+	height: 799.05px;
+}
+.coco-right img{
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+}
+.coco-right img:hover{
+	transform: scale(1.1);
+}
+.coco-pic1{
+	display: block;
+	width: 564px;
+	height: 87px;
+	margin-bottom: 55px;
+}
+.coco-pic2{
+	display: block;
+	width: 461px;
+	height: 41px;
+	margin-bottom: 17px;
+}
+.coco-pic3{
+	width: 491px;
+	height: 20px;
+	display: block;
+	margin-bottom: 15px;
+}
+.coco-pic4{
+	width: 189px;
+	height: 20px;
+	margin-bottom: 15px;
+	display: block;
+}
+.coco-pic5{
+	width: 212px;
+	height: 66px;
+	display: block;
+	margin-top: 30px;
+}
+/*coco结束*/
+/*2结束*/
+
+/*3*/
+.three{
+	width: 100%;
+	height: 1206px;
+	background: pink;
+	overflow: hidden;
+}
+.controls{
+	width: 100%;
+	height: 156px;
+	list-style: none;
+	
+}
+.controls li{
+	float: left;
+	width: 300px;
+	height: 156px;
+
+	overflow: hidden;
+	
+	background-position: left center;
+	background-size: 156px 156px;
+}
+.controls li:nth-child(1){
+	margin-left: 90px;
+	background: url(../img/动画/character-1.png) no-repeat;
+}
+.controls p{
+	height: 156px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #949494;
+	vertical-align: middle;
+	display: table-cell;
+	float: right;
+	margin-top: 57px;
+	margin-right:34px;
+}
+.controls li:hover p{
+	color: #eb334e;	
+}
+.controls li:nth-child(2){
+	background: url(../img/动画/character-2.png) no-repeat;
+}
+.controls li:nth-child(3){
+	background: url(../img/动画/character-3.png) no-repeat;
+}
+.controls li:nth-child(4){
+	background: url(../img/动画/character-4.png) no-repeat;
+}
+
+.controls li:nth-child(1):hover{
+	background: url(../img/动画/character-1-active.png) no-repeat;
+}
+.controls li:nth-child(2):hover{
+	background: url(../img/动画/character-2-active.png) no-repeat;
+}
+.controls li:nth-child(3):hover{
+	background: url(../img/动画/character-3-active.png) no-repeat;
+}
+.controls li:nth-child(4):hover{
+	background: url(../img/动画/character-4-active.png) no-repeat;
+}
+.view{
+	width: 100%;
+	height: 1050px;
+	background: bisque;
+}
+/*3结束*/
+/*中心结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
